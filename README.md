@@ -70,3 +70,7 @@ Now for a better understanding about audio source and audio listener you can wat
 Singleton Design Pattern : Generally speaking, a singleton in Unity is a globally accessible class that exists in :sweat:the scene, but only once. The idea is that any other script can access the singleton, allowing you to easily connect objects to important parts of the game, such as to the player or to other game systems. 
 Honestly speaking you can understand this concept better from this [Video](https://www.youtube.com/watch?v=Y6cKPfUTrsA) rather than me trying to explain this :sweat:
 
+You can download some sound effects from this website: [LINK](https://sfxr.me/)
+For bg music just google up something according to your liking.
+
+After Both the tasks your end product should look like this 
