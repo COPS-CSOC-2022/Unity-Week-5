@@ -74,3 +74,6 @@ You can download some sound effects from this website: [LINK](https://sfxr.me/)
 For bg music just google up something according to your liking.
 
 
+## Further Instructions
+
+You have to integrate everything int the same folder you made in previous tasks. Every script should be named properly, indicating what that script is doing. You will asked to submit all the scripts and a recording of your final product at the end of week5. 
