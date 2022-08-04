@@ -65,7 +65,7 @@ Audio Listener: This is a component that's automatically attached to the main ca
 
 Audio Source : The Audio Source component has quite a few properties which we can tinker around with. This includes its pitch, panning, spatial blending (We'll get to that later), and if you open the 3D Sound Settings, you will find options for adding Doppler Effects and volume rolloffs. What interests us the most here is the AudioClip slot, however. That's where the sound effect to be played goes. Unity supports quite a few common sound formats, including .mp3 and .ogg etc.
 
-Now for a better understanding about audio source and audio listener you can watch this [VIDEO](https://www.youtube.com/watch?v=6OT43pvUyfY) but the audio manager made by this is not recommended to make. Instead we wil use Singleton design pattern to make our audiomanager. 
+Now for a better understanding about audio source and audio listener you can watch this [VIDEO](https://www.youtube.com/watch?v=6OT43pvUyfY) but the audio manager made by this guy is not recommended. Instead we wil use Singleton design pattern to make our audiomanager. 
 
 Singleton Design Pattern : Generally speaking, a singleton in Unity is a globally accessible class that exists in :sweat:the scene, but only once. The idea is that any other script can access the singleton, allowing you to easily connect objects to important parts of the game, such as to the player or to other game systems. 
 Honestly speaking you can understand this concept better from this [Video](https://www.youtube.com/watch?v=Y6cKPfUTrsA) rather than me trying to explain this :sweat:
