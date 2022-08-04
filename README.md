@@ -36,7 +36,7 @@ Now set the "Order In Layer" field to 20 so that all the UI is rendered on top o
 
 Canvas Scaler : The Canvas Scaler component is used for controlling the overall scale and pixel density of UI elements in the Canvas. This scaling affects everything under the Canvas, including font sizes and image borders. In "UI scale mode" option set it to "Scale with screen size". By doing this all the UI will be scaled according to several screen sizes. Using the Scale With Screen Size mode, positions and sizes can be specified according to the pixels of a specified reference resolution. If the current screen resolution is larger then the reference resolution, the Canvas will keep having only the resolution of the reference resolution, but will scale up in order to fit the screen. If the current screen resolution is smaller than the reference resolution, the Canvas will similarly be scaled down to fit. If the current screen resolution has a different aspect ratio than the reference resolution, scaling each axis individually to fit the screen would result in non-uniform scaling, which is generally undesirable. Instead of this, the ReferenceResolution component will make the Canvas resolution deviate from the reference resolution in order to respect the aspect ratio of the screen.
 
-## Task 1
+## Task 1 - UI
 
 Now your 1st task is to make game over UI element using Canvas. It should something like this: 
 
@@ -48,4 +48,25 @@ You will also be making a main menu scene which should look something like this:
 ![UI-main_menu](https://user-images.githubusercontent.com/87766488/182786474-afce096d-a0ce-45bb-9230-b9554e30873c.png)
 
 NOTE: Pls don't judge my designing skills :sweat:. 
+
+In order to add functionality to buttons, you can watch this video: [LINK](https://www.youtube.com/watch?v=zc8ac_qUXQY), this would be more than enough for now.
+
+Let's Jump right onto adding music to our game.
+
+## Task 2 - Music and sound effects
+
+We deal with 2 main components related to Audio in Unity, they are:
+
+- Audio Listener
+- Audio Source
+Let's have a look at these components.
+
+Audio Listener: This is a component that's automatically attached to the main camera every time you create a scene. It doesn't have any properties, since its only job is to act as the point of perception. Leaving the Audio Listener as it is, is recommended.
+
+Audio Source : The Audio Source component has quite a few properties which we can tinker around with. This includes its pitch, panning, spatial blending (We'll get to that later), and if you open the 3D Sound Settings, you will find options for adding Doppler Effects and volume rolloffs. What interests us the most here is the AudioClip slot, however. That's where the sound effect to be played goes. Unity supports quite a few common sound formats, including .mp3 and .ogg etc.
+
+Now for a better understanding about audio source and audio listener you can watch this [VIDEO](https://www.youtube.com/watch?v=6OT43pvUyfY) but the audio manager made by this is not recommended to make. Instead we wil use Singleton design pattern to make our audiomanager. 
+
+Singleton Design Pattern : Generally speaking, a singleton in Unity is a globally accessible class that exists in :sweat:the scene, but only once. The idea is that any other script can access the singleton, allowing you to easily connect objects to important parts of the game, such as to the player or to other game systems. 
+Honestly speaking you can understand this concept better from this [Video](https://www.youtube.com/watch?v=Y6cKPfUTrsA) rather than me trying to explain this :sweat:
 
